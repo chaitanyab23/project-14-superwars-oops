@@ -23,9 +23,14 @@ const PLAYERS = [
 
 // Player Class
 class Player {
-    constructor(id, name, type) {
+    constructor(id, name, type, strength, image) {
         // Create member variables and assign values
         // Type your code
+        this.id= id;
+        this.name=name;
+        this.type=type;
+        this.strength= this.getRandomStrength();
+        this.image="images/super-"+(i+1)+".png";   
 
     }
 
@@ -50,6 +55,7 @@ class Superwar {
     // Create a field players 
     // Use Map method to loop through players argument and create new players
     // Type your code here
+
 
     }
 
